@@ -3,6 +3,8 @@ import log from "../Assets/hu.png";
 import Test from "../Components/test";
 import Button from "../Components/Button";
 import { AiOutlineLogin } from "react-icons/ai";
+import {FcGoogle, FcIphone} from "react-icons/fc"
+import Auth from "../Components/Auth";
 
 const Login = () => {
   return (
@@ -23,9 +25,14 @@ const Login = () => {
         <Test name='PASSWORD' type="password" placeholder='Password...' />
         </div>
         <div className="btn">
-        <Button type='submit' button='LOGIN' icon={<AiOutlineLogin/>}/>
+        <Button button='LOGIN' icon={<AiOutlineLogin/> } />
         </div>
         <h4>Forgot Password?</h4>
+        <p>Or Continue with:</p>
+        <div className="auth">
+        <Auth id="google" name='Google' icon={<FcGoogle />}/> 
+        <Auth name='Facebook' icon={<FcIphone />}/>
+        </div>
         </div>
         </div>
       </div>
