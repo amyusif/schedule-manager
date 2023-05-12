@@ -1,10 +1,8 @@
 import React from "react";
 import log from "../Assets/hu.png";
-import Test from "../Components/test";
-import Button from "../Components/Button";
-import { AiOutlineLogin } from "react-icons/ai";
-import {FcGoogle, FcIphone} from "react-icons/fc"
 import Auth from "../Components/Auth";
+import LoginHeader from "../Components/LoginHeader";
+import Form from "../Components/Form";
 
 const Login = () => {
   return (
@@ -17,23 +15,18 @@ const Login = () => {
           </div>
         </div>
         <div className="right">
-        <div className="right-container">
-        <div className="field">
-        <Test name='EMAIL' type="email" placeholder='Email' />
-        </div>
-        <div className="field">
-        <Test name='PASSWORD' type="password" placeholder='Password...' />
-        </div>
-        <div className="btn">
-        <Button button='LOGIN' icon={<AiOutlineLogin/> } />
-        </div>
-        <h4>Forgot Password?</h4>
-        <p>Or Continue with:</p>
-        <div className="auth">
-        <Auth id="google" name='Google' icon={<FcGoogle />}/> 
-        <Auth name='Facebook' icon={<FcIphone />}/>
-        </div>
-        </div>
+          <div className="right-container">
+          <LoginHeader />
+            <Form />
+            <div className="authentication">
+            <p>Or Continue with:</p>
+            <div className="auth">
+              <Auth id="google" name="Google" />
+              <Auth id="linkedin" name="LinkedIn"  />
+            </div>
+            <p>Don't have an Account? Create one here</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

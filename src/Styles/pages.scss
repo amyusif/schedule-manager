@@ -1,5 +1,5 @@
 @import url("../Styles/login.scss");
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Roboto:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Caveat:wght@600;700&family=Exo+2:wght@300;600&family=Roboto:wght@400;500&display=swap");
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@
   height: 100vh;
   display: grid;
   place-items: center;
-  //  background-image: url(../Assets/2.svg); 
+  //  background-image: url(../Assets/2.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -31,18 +31,19 @@
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.left, .right{
+.left,
+.right {
   width: 50%;
   height: 100%;
   padding: 10px;
   display: grid;
   place-items: center;
 }
-.left{
-background-color: #7149C6;
-border-radius: 5px;
+.left {
+  background-color: #EEEEEE;
+  border-radius: 5px;
 }
-.left-cont{
+.left-cont {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -51,103 +52,110 @@ border-radius: 5px;
 
 h4{
   font-family: 'Roboto', sans-serif;
-  text-align: right;
-  font-size: 14px;
-  cursor: pointer;
+}
 
-  &:hover{
-    text-decoration: underline;
+.input {
+  width: 400px;
+  padding: 10px;
+  height: 44px;
+  background-color: #05060f0a;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+    color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+    background 0.2s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-family: "Roboto", sans-serif;
+  padding: 7px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #05060f99;
+  transition: color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+}
+
+.input:hover,
+.input:focus,
+.input-group:hover .input {
+  outline: none;
+  border-color: #62CDFF;
+}
+
+.input-group {
+  padding: 7px;
+
+  &:hover .label,
+  .input:focus {
+    color: #05060fc2;
   }
 }
-h5, p{
-  font-family: 'Roboto', sans-serif;
-  text-align: justify;
-  font-size: 1rem;
-}
 
-// this is a test for an input field
-
-/* Input container */
-.input-container {
-  position: relative;
-  margin: 20px;
-}
-
-/* Input field */
-.input-field {
-  display: block;
-  width: 77%;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  border-bottom: 2px solid #ccc;
-  outline: none;
-  background-color: transparent;
-}
-
-/* Input label */
-.input-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 13px;
-  font-family: 'Roboto', sans-serif;
-  color: rgba(204, 204, 204, 0);
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
-
-/* Input highlight */
-.input-highlight {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  width: 0;
-  background-color: #7149C6;
-  transition: all 0.3s ease;
-}
-
-/* Input field:focus styles */
-.input-field:focus + .input-label {
-  top: -20px;
-  font-size: 12px;
-  color: #7149C6;
-}
-
-.input-field:focus + .input-label + .input-highlight {
-  width: 77%;
-}
-
-.right-container{
+.right-container {
+  width: 95%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding: 20px;
-  width: 77%;
-  height: auto;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 60px;
 }
-.btn{
-  text-align: center;
+#head {
+  font-family: "Exo 2", sans-serif;
+  font-size: 32px;
+
+  #header {
+    font-family: "Caveat", cursive;
+    font-weight: 700;
+  }
+}
+#desc{
+  color: #A2B5BB;
 }
 
-.p{
-  font-family: 'Roboto', sans-serif;
+.p {
+  font-family: "Roboto", sans-serif;
   padding: 15px 70px;
   font-size: 16px;
-  border: 1px solid;
+  border: 2px solid #EEEEEE;
   text-decoration: none;
-
-  
+  border-radius: 10px;
 }
-#google:hover{
-    background-color: yellow;
-  }
+#google {
+  color: #05060f99;
 
-.auth{
+  &:hover {
+    background: linear-gradient(to right, #df2e38, #f7d060, #36ae7c, #3ab0ff);
+  }
+}
+
+.auth {
   display: flex;
   justify-content: space-between;
+}
+#linkedin {
+  color: #05060f99;
 
+  &:hover {
+    background-color: #3ab0ff;
+  }
+}
+.authentication {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.fg-pass{
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  text-align: right;
   
-
+}
+form{
+  display: grid;
+  place-items: center;
 }
