@@ -19,12 +19,16 @@ const Login = () => {
           <LoginHeader />
             <Form />
             <div className="authentication">
-            <p>Or Continue with:</p>
+            <div className="or">
+            <div className="line"></div>
+            <p>or</p>
+            <div className="line"></div>
+            </div>
             <div className="auth">
               <Auth id="google" name="Google" />
               <Auth id="linkedin" name="LinkedIn"  />
             </div>
-            <p>Don't have an Account? Create one here</p>
+            <p>Don't have an Account? <a href="/">Create one here</a></p>
             </div>
           </div>
         </div>

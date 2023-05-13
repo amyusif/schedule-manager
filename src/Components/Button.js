@@ -1,12 +1,11 @@
 import React from "react";
 
-const Button = ({ button, icon, type }) => {
+const Button = ({ name, icon, type }) => {
   return (
-    <div>
-      <a class="btn" href="/">
-        I am a button
-      </a>
-    </div>
+      <button class="btn" href="/" type={type}>
+        {name} {icon}
+      </button>
+  
   );
 };
 
