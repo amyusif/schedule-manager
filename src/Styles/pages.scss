@@ -1,5 +1,5 @@
 @import url("../Styles/login.scss");
-@import url("https://fonts.googleapis.com/css2?family=Acme&family=Caveat:wght@600;700&family=Exo+2:wght@300;600&family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Barlow:ital,wght@1,300&family=Caveat:wght@600;700&family=Exo+2:wght@300;600&family=Roboto:wght@400;500&display=swap");
 
 * {
   margin: 0;
@@ -102,8 +102,10 @@ h4 {
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding: 25px 60px;
+  gap: 20px;
+  padding: 15px 60px;
+  margin: 0px 15px;
+  overflow: hidden;
 }
 
 #head {
@@ -122,12 +124,15 @@ h4 {
 .btn-auth {
   font-family: "Roboto", sans-serif;
   padding: 15px 55px;
-  font-size: 16px;
+  font-size: 18px;
   border: 2px solid #eeeeee;
   text-decoration: none;
   border-radius: 10px;
   color: #05060f99;
   margin: 7px;
+  height: fit-content;
+  display: flex;
+  gap: 4px;
 }
 
 .auth {
@@ -136,30 +141,24 @@ h4 {
   gap: 10px;
 }
 
-#linkedin:hover {
-  background-color: #3ab0ff;
-}
+// #linkedin:hover {
+//   background-color: #3ab0ff;
+// }
 
 .authentication {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 10px;
+  gap: 17px;
 }
 .form {
   padding: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
   height: auto;
-
-  .fg-pass {
-    text-decoration: none;
-    text-align: right;
-    padding: 6px;
-  }
 }
 
 .or {
@@ -178,3 +177,25 @@ h4 {
     color: #05060f99;
   }
 }
+#create {
+  font-size: 16px;
+  color: #a2b5bb;
+  font-family: "Roboto", sans-serif;
+  margin-top: 12px;
+}
+a{
+  text-decoration: none;
+  color: #1877f2;
+
+  &:hover{
+    text-decoration: dashed;
+  }
+}
+.fg-pass {
+  width: 360px;
+  padding: 5px;
+  text-align: right;
+  font-family: "Acme", sans-serif;
+}
+
+

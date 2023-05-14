@@ -7,9 +7,9 @@ const Form = () => {
     <form action="" method="post" className="form">
       <Test name="Eamil Address" type="email" />
       <Test name="Password" type="password" />
-      <a href="/" className="fg-pass">
+      <div className="fg-pass"><a href="/">
         Forgot Password?
-      </a>
+      </a></div>
       <Button name="Login" type="submit" />
     </form>
   );

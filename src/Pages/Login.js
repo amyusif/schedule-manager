@@ -3,6 +3,10 @@ import log from "../Assets/hu.png";
 import Auth from "../Components/Auth";
 import LoginHeader from "../Components/LoginHeader";
 import Form from "../Components/Form";
+import { FcGoogle } from "react-icons/fc";
+import { BsLinkedin } from "react-icons/bs";
+
+
 
 const Login = () => {
   return (
@@ -25,10 +29,10 @@ const Login = () => {
             <div className="line"></div>
             </div>
             <div className="auth">
-              <Auth id="google" name="Google" />
-              <Auth id="linkedin" name="LinkedIn"  />
+              <Auth id="google" name="Google" icon={<FcGoogle size={20} />} />
+              <Auth id="linkedin" name="LinkedIn"   icon={<BsLinkedin size={20} color="#1877f2"/>}/>
             </div>
-            <p>Don't have an Account? <a href="/">Create one here</a></p>
+            <p id="create">Don't have an Account? <a href="/">Create one here</a></p>
             </div>
           </div>
         </div>
