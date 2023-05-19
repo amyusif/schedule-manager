@@ -5,17 +5,19 @@ import LoginHeader from "../Components/LoginHeader";
 import Form from "../Components/Form";
 import { FcGoogle } from "react-icons/fc";
 import { BsLinkedin } from "react-icons/bs";
+import { Styledcard } from "../Components/Styled-Components/StyledList.styled";
+
 
 
 
 const Login = () => {
   return (
     <div className="main">
-      <div className="container">
+    <Styledcard width='70' height='70'>
         <div className="left">
           <div className="left-cont">
             <img src={log} alt="" />
-            <h5>Connect with millions of Employees Accross the world</h5>
+            <h5 id="h5">Discover and know how to schedule meeting with your clients </h5>
           </div>
         </div>
         <div className="right">
@@ -36,7 +38,7 @@ const Login = () => {
             </div>
           </div>
         </div>
-      </div>
+        </Styledcard> 
     </div>
   );
 };
