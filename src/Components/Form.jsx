@@ -7,10 +7,10 @@ const Form = () => {
     <form action="" method="post" className="form">
       <Test name="Eamil Address" type="email" />
       <Test name="Password" type="password" />
-      <div className="fg-pass"><a href="/">
-        Forgot Password?
-      </a></div>
-      <Styledbtn width='332px'>Login</Styledbtn>
+      <div className="fg-pass">
+        <a href="/">Forgot Password?</a>
+      </div>
+      <Styledbtn width="332px" primary>Login</Styledbtn>
     </form>
   );
 };
